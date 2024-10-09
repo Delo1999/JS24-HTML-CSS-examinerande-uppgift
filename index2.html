@@ -1,23 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Planned Planthood</title>
-	<link rel="stylesheet" href="styles2.css">
-</head>
-<body>
-	<div class="wrapper">
-		<nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planned Planthood</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="nav">
+        <a class="nav__link" href="#">PLANER</a>
+        <a class="nav__link" href="#">HISTORIK</a>
+        <a class="nav__link" href="#">TIPS</a>
+        <a class="nav__link" href="#">LOGGA UT</a>
+      </nav>
 
+      <header>
+        <img
+          class="header__image header__image--hand"
+          src="./assets/images/handsidan.avif"
+          alt="hand sträcker efter planta"
+        />
+        <img
+          class="header__image header__image--logo"
+          src="./assets/icons/Logo.svg"
+          alt="logo"
+        />
 
-		</nav>
-<header></header>
+        <img
+          class="header__image header__image--menu"
+          src="./assets/images/menu.png"
+          alt="menu"
+        />
 
-<main></main>
+        <h1 class="header__title">Mina sidor</h1>
+      </header>
 
-<footer></footer>
+      <main>
+        <article class="add-plant">
+          <h2 class="add-plant__title">Lägg till ny plantering:</h2>
+          <section class="add-plant__container">
+            <h3 class="add-plant__plant-subtitle">Planta:</h3>
+            <input class="add-plant__plant-name" type="text" />
+          </section>
+          <section class="add-plant__container">
+            <h3 class="add-plant__date-subtitle">Datum:</h3>
+            <input class="add-plant__plant-date" type="text" />
+          </section>
+          <button class="add-plant__button">LÄGG TILL</button>
+        </article>
 
-	</div>
-</body>
+        <article class="planned-plants">
+          <h2 class="planned-plants__title">Dina planerade planteringar:</h2>
+          <article class="grid">
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/gurka.avif"
+                  alt="gurka"
+                />
+              </section>
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Gurka</h3>
+                  <h3 class="card__date">15 april 2024</h3>
+                </header>
+                <footer class="card__footer">
+                  <h3 class="card__latin-name">Rico Coolio</h3>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="trashbin"
+                  />
+                </footer>
+              </section>
+            </section>
+          </article>
+        </article>
+
+        <article class="planted-plants">
+          <h2 class="planted-plants__title">Dina planerade planteringar:</h2>
+          <article class="grid-2">
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/gurka.avif"
+                  alt="gurka"
+                />
+              </section>
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Gurka</h3>
+                  <h3 class="card__date">15 april 2024</h3>
+                </header>
+                <footer class="card__footer">
+                  <h3 class="card__latin-name">Rico Coolio</h3>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="trashbin"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/gurka.avif"
+                  alt="gurka"
+                />
+              </section>
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Gurka</h3>
+                  <h3 class="card__date">15 april 2024</h3>
+                </header>
+                <footer class="card__footer">
+                  <h3 class="card__latin-name">Rico Coolio</h3>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="trashbin"
+                  />
+                </footer>
+              </section>
+            </section>
+          </article>
+        </article>
+      </main>
+
+      <footer>
+        <section class="grid-3">
+          <section class="gallery">
+            <img
+              class="gallery__card-1"
+              src="./assets/images/plockar.avif"
+              alt="man plockar grönsaker"
+            />
+            <img
+              class="gallery__card-2"
+              src="./assets/images/vattenkanna.avif"
+              alt="vattenkanna"
+            />
+            <img
+              class="gallery__card-3"
+              src="./assets/images/massagrönsaker.avif"
+              alt="massa grönsaker"
+            />
+            <img
+              class="gallery__card-4"
+              src="./assets/images/tjejmedhatt.avif"
+              alt="tjej med hatt"
+            />
+          </section>
+          <h2 class="footer__text">Till toppen av sidan</h2>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,5 +1,408 @@
-@media screen and (max-width: 480px) {
-  .wrapper {
-    padding: 0;
-    margin: 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+}
+
+body {
+  background-color: antiquewhite;
+}
+.wrapper {
+  max-width: 480px;
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header__image--hand {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+header {
+  position: relative;
+}
+.header__image--logo {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.header__image--menu {
+  position: absolute;
+  top: 3%;
+  left: 82.5%;
+  width: 60px;
+  height: 50px;
+  display: block;
+}
+
+.header__title {
+  font-family: "Maven Pro";
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  font-weight: 500;
+}
+
+.add-plant__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-plant__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-plant__plant-subtitle,
+.add-plant__date-subtitle {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0px 5%;
+}
+
+.add-plant__plant-name,
+.add-plant__plant-date {
+  width: 90%;
+  height: 40px;
+  border: 1px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-self: center;
+}
+
+.add-plant {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-plant__button {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #0a846e;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0 hsla(0, 0%, 0%, 0.25);
+  padding: 10px 0px;
+  width: 150px;
+  margin: 10% 0%;
+  align-self: center;
+}
+
+.planned-plants__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: 5% 5%;
+}
+
+.card {
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card__date {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.card__latin-name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.card__trashbin {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.planted-plants__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5% 5%;
+  gap: 20px;
+}
+
+.gallery {
+  margin-top: 7.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 20px;
+  background-color: rgba(158, 109, 82, 1);
+  padding: 20px;
+}
+
+.gallery__card-1,
+.gallery__card-2,
+.gallery__card-3,
+.gallery__card-4 {
+  height: 92.5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.nav {
+  display: none;
+}
+
+@media (max-width: 480px) {
+}
+
+body {
+  background-color: antiquewhite;
+}
+.wrapper {
+  max-width: 480px;
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header__image--hand {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
+
+header {
+  position: relative;
+}
+.header__image--logo {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.header__image--menu {
+  position: absolute;
+  top: 3%;
+  left: 82.5%;
+  width: 60px;
+  height: 50px;
+  display: block;
+}
+
+.header__title {
+  font-family: "Maven Pro";
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: white;
+  font-weight: 500;
+}
+
+.add-plant__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-plant__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-plant__plant-subtitle,
+.add-plant__date-subtitle {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0px 5%;
+}
+
+.add-plant__plant-name,
+.add-plant__plant-date {
+  width: 90%;
+  height: 40px;
+  border: 1px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  align-self: center;
+}
+
+.add-plant {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-plant__button {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #0a846e;
+  border: none;
+  border-radius: 9px;
+  box-shadow: 0px 4px 4px 0 hsla(0, 0%, 0%, 0.25);
+  padding: 10px 0px;
+  width: 150px;
+  margin: 10% 0%;
+  align-self: center;
+}
+
+.planned-plants__title {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  margin: 5% 5%;
+}
+
+.card {
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card__date {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.card__latin-name {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.card__trashbin {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5% 5%;
+  gap: 20px;
+}
+
+.gallery {
+  margin-top: 7.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px 20px;
+  background-color: rgba(158, 109, 82, 1);
+  padding: 20px;
+}
+
+.gallery__card-1,
+.gallery__card-2,
+.gallery__card-3,
+.gallery__card-4 {
+  height: 92.5px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.nav {
+  display: none;
+}
