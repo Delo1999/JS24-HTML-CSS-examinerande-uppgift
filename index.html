@@ -1,12 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planned Planthood</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planned Planthood</title>
+    <link rel="stylesheet" class="nav__link" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img
+          class="header__image header__image--hand"
+          src="./assets/images/hand.jpeg"
+          alt="hand som håller i miniplanta"
+        />
+
+        <img
+          class="header__image header__image--menu"
+          src="./assets/images/menu.png"
+          alt="menu"
+        />
+
+        <img
+          class="header__image header__image--logo"
+          src="./assets/icons/Logo.svg"
+          alt="logo"
+        />
+        <div class="header__image--brown">
+          <img
+            class="header__image header__image--small"
+            src="./assets/icons/seedling.svg"
+            alt="sått frö"
+          />
+        </div>
+        <div class="header__image--green">
+          <img
+            class="header__image header__image--small"
+            src="./assets/icons/dig.svg"
+            alt="spade i marken"
+          />
+        </div>
+      </header>
+      <nav class="nav">
+        <a class="nav__link" href="#">PLANER</a>
+        <a class="nav__link" href="#">HISTORIK</a>
+        <a class="nav__link" href="#">TIPS</a>
+        <a class="nav__link" href="#">LOGGA IN</a>
+      </nav>
+      <main>
+        <section class="harvest">
+          <h1 class="harvest__title">PLANNED PLANTHOOD</h1>
+          <section class="harvest__container">
+            <section class="harvest__image-container">
+              <img
+                class="harvest__image"
+                src="./assets/icons/Vectorseedpackage.svg"
+                alt="fröpaket"
+              />
+            </section>
+            <article class="harvest__small-container">
+              <h2 class="harvest__subtitle">Säsong att så</h2>
+              <p class="harvest__text">
+                Våren är äntligen här i kollektivet! <br />
+                Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc
+                consectetur neque. Vel amet netus amet eu elit.
+              </p>
+              <button class="harvest__button">SÅ-TIPS</button>
+            </article>
+          </section>
+          <hr class="harvest__horizontal-line" />
+        </section>
+
+        <article class="gallery">
+          <h2 class="gallery__title">Våra planerade planteringar</h2>
+          <article class="gallery__grid">
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/gurka.avif"
+                  alt="Gurka"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Gurka</h3>
+                  <p class="card__date">15 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Rico Coolio</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/tomater.avif"
+                  alt="tomater"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Tomat</h3>
+                  <p class="card__date">1 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Jocke</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/tomat.avif"
+                  alt="Tomat"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Tomat</h3>
+                  <p class="card__date">1 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Majvor och P-Å</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images//ärta.avif"
+                  alt="Sockerärta"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Tomat</h3>
+                  <p class="card__date">15 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Frippe</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/lilagrönsak.avif"
+                  alt="Majrova"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Majrova</h3>
+                  <p class="card__date">1 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Emma på 4an</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+
+            <section class="card">
+              <section class="card__image-container">
+                <img
+                  class="card__image"
+                  src="./assets/images/cloesupväxt.avif"
+                  alt="Squash"
+                />
+                <img
+                  class="card__logo"
+                  src="./assets/icons/plant.svg"
+                  alt="planta"
+                />
+              </section>
+
+              <section class="card">
+                <header class="card__header">
+                  <h3 class="card__title">Squash</h3>
+                  <p class="card__date">15 april 2024</p>
+                </header>
+                <footer class="card__footer">
+                  <p class="card__latin-name">Perra J</p>
+                  <button class="card__button">TA BORT</button>
+                  <img
+                    class="card__trashbin"
+                    src="./assets/images/papperskorg.png"
+                    alt="papperskorg-symbol"
+                  />
+                </footer>
+              </section>
+            </section>
+          </article>
+          <button class="gallery__button">Visa fler</button>
+        </article>
+        <section></section>
+
+        <section class="harvest-history">
+          <section class="harvest-history__container">
+            <section class="harvest-history__image-container">
+              <img src="./assets/icons/plant.svg" alt="fröpaket" />
+            </section>
+            <article class="harvest-history__small-container">
+              <h2 class="harvest-history__subtitle">Våra tidigare odlingar</h2>
+              <p class="harvest-history__text">
+                Våren är äntligen här i kollektivet! <br />
+                Lorem ipsum dolor sit amet consectetur. Sit venenatis arcu nunc
+                consectetur neque. Vel amet netus amet eu elit.
+              </p>
+              <button class="harvest-history__button">
+                Planterade plantor
+              </button>
+            </article>
+          </section>
+        </section>
+      </main>
+      <footer class="card-2">
+        <section class="card-2__footer">
+          <section class="card-2__image-container">
+            <img
+              class="card-2__image"
+              src="./assets/images/handsidan.avif"
+              alt="hand sträcker efter planta"
+            />
+            <img
+              class="card-2__logo"
+              src="./assets/icons/Logo.svg"
+              alt="logo"
+            />
+          </section>
+          <section class="card-2__container">
+            <h2 class="card-2__title">Vi hörs!</h2>
+            <article class="card-2__contact-details">
+              <div class="card-2__telephone-details">
+                <img
+                  class="card-2__telephone"
+                  src="./assets/icons/telephone.svg"
+                  alt="telephone-symbol"
+                />
+                <h3 class="card-2__number">0701-234567</h3>
+              </div>
+              <div class="card-2__email-details">
+                <img
+                  class="card-2__envelope"
+                  src="./assets/icons/envelope.svg"
+                  alt="envelope-symbol"
+                />
+                <h3 class="card-2__email">mail@mail.se</h3>
+              </div>
+            </article>
+          </section>
+
+          <h3 class="footer__text">Till toppen av sidan</h3>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

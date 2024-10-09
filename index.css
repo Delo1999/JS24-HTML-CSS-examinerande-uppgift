@@ -1,0 +1,609 @@
+/* -----------CSS Reset / Normalize START----------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: unset;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* -----------CSS Reset / Normalize END----------- */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 25px auto;
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-height: 540px;
+  grid-template-areas:
+    "hand spade"
+    "hand seed";
+  position: relative;
+}
+
+.header__image {
+  background: transparent;
+  height: 540px;
+  max-height: 100%;
+  width: 100%;
+}
+
+.header__image--hand {
+  grid-area: hand;
+}
+
+.header__image--menu {
+  display: none;
+}
+
+.header__image--logo {
+  width: 19%;
+  height: 34%;
+  position: absolute;
+  top: 38%;
+  left: 15%;
+}
+
+.header__image--brown {
+  background-color: #9e6d52;
+  grid-area: spade;
+  max-height: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image--green {
+  background-color: #0a846e;
+  grid-area: seed;
+  height: 270px;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image--small {
+  width: 75%;
+  height: 75%;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 4px 4px #03382f1c;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #055647;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.harvest__title {
+  text-align: center;
+  margin: 45px 0;
+  color: #0a846e;
+  font-weight: 500;
+  font-size: 3rem;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.harvest__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 50px;
+}
+
+.harvest__image-container {
+  background-color: #0a846e;
+  border-radius: 50%;
+  width: 377px;
+  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.harvest__small-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.harvest__subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #1e1e1e;
+  font-weight: 700;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+
+.harvest__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
+}
+
+.harvest__button {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 9px;
+  width: 179px;
+  height: 63px;
+  background-color: #0a846e;
+  align-self: flex-end;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.harvest__horizontal-line {
+  width: 33.3%;
+  margin: 100px auto;
+  border: 3px solid #055647;
+  border-radius: 10px;
+}
+
+.gallery__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+}
+
+.card {
+  box-shadow: 3px 4px 4px 0px #00000025;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+}
+
+.card__image {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card__title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.card__date {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.card__latin-name {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.card__button {
+  background: #b93857;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  padding: 5px 15px;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card__trashbin {
+  display: none;
+}
+
+.gallery__button {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #0a846e;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0 hsla(0, 0%, 0%, 0.25);
+  padding: 10px 30px;
+  margin: 50px auto;
+}
+
+.harvest-history__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0px 50px;
+  flex-direction: row-reverse;
+  margin-bottom: 100px;
+}
+
+.harvest-history__image-container {
+  background-color: #0a846e;
+  border-radius: 50%;
+  width: 377px;
+  height: 377px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.harvest-history__small-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.harvest-history__subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #1e1e1e;
+  font-weight: 700;
+  font-size: 2rem;
+  align-self: flex-start;
+}
+
+.harvest-history__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
+}
+
+.harvest-history__button {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border: 0;
+  border-radius: 9px;
+  width: fit-content;
+  background-color: #0a846e;
+  padding: 10px 30px;
+}
+
+.card-2__image {
+  height: 590px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card-2__logo {
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.card-2__footer {
+  position: relative;
+}
+
+.card-2__container {
+  width: 500px;
+  height: 590px;
+  background-color: rgba(0, 0, 0, 0.79);
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.card-2__title {
+  font-family: "Maven Pro";
+  font-weight: 500;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+.card-2__telephone-details {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.card-2__number {
+  font-family: "Maven Pro";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  text-wrap: nowrap;
+}
+
+.card-2__email-details {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+.card-2__email {
+  font-family: "Maven Pro";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+}
+
+.card-2__contact-details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer__text {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  padding: 25px 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 390px 195px;
+    grid-template-areas:
+      "hand hand"
+      "seed spade";
+  }
+
+  .header__image--hand {
+    grid-area: hand;
+  }
+
+  .header__image--menu {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: 3%;
+    left: 82.5%;
+    display: block;
+  }
+
+  .header__image--logo {
+    top: 20%;
+    left: 25%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .header__image--brown {
+    grid-area: seed;
+  }
+
+  .header__image--green {
+    grid-area: spade;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .harvest__container {
+    gap: 30px;
+    flex-direction: column-reverse;
+  }
+
+  .harvest__title {
+    margin-top: 70px;
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+  }
+
+  .harvest__subtitle {
+    font-size: 1rem;
+    align-self: center;
+  }
+
+  .harvest__text {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .harvest__button {
+    width: 99px;
+    height: 35px;
+    font-size: 1rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-self: center;
+  }
+
+  .harvest__image-container {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .harvest__image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .harvest__horizontal-line {
+    width: 66.6%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .gallery__title {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card__title {
+    font-size: 1rem;
+  }
+
+  .card__date,
+  .card__latin-name {
+    font-size: 0.8rem;
+  }
+
+  .card__button {
+    display: none;
+  }
+
+  .card__trashbin {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .gallery__button {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 40px auto;
+  }
+
+  .harvest-history__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .harvest-history__image-container {
+    width: 300px;
+    height: 300px;
+  }
+
+  .harvest-history__subtitle {
+    font-size: 1.5rem;
+    align-self: center;
+  }
+
+  .harvest-history__text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .harvest-history__button {
+    font-size: 1rem;
+    align-self: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  .card-2__image {
+    height: 790px;
+  }
+
+  .card-2__logo {
+    top: 25%;
+    left: 50%;
+  }
+
+  .card-2__container {
+    width: 430px;
+    height: 400px;
+    top: 44.6%;
+    left: 0%;
+  }
+}
