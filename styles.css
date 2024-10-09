@@ -601,9 +601,9 @@ header {
   }
 
   .card-2__container {
-    width: 430px;
     height: 400px;
     top: 44.6%;
     left: 0%;
+    width: 100%;
   }
 }
