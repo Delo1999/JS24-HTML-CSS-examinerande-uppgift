@@ -209,6 +209,10 @@ header {
   display: none;
 }
 
+.card__image--plant {
+  display: none;
+}
+
 @media (min-width: 481px) {
   body {
     width: 100vw;
@@ -288,10 +292,11 @@ header {
   }
 
   .card__image--plant {
+    display: block;
     position: absolute;
     object-fit: contain;
-    width: 75%;
-    height: 75%;
+    width: 60%;
+    height: 60%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
