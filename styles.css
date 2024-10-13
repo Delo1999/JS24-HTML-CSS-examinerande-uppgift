@@ -55,22 +55,20 @@ header {
   position: relative;
 }
 
-.header__image {
+.header__hand {
   background: transparent;
   height: 540px;
   max-height: 100%;
   width: 100%;
-}
-
-.header__image--hand {
   grid-area: hand;
+  object-fit: cover;
 }
 
-.header__image--menu {
+.header__menu {
   display: none;
 }
 
-.header__image--logo {
+.header__logo {
   width: 19%;
   height: 34%;
   position: absolute;
@@ -78,7 +76,7 @@ header {
   left: 15%;
 }
 
-.header__image--brown {
+.header__image--background {
   background-color: #9e6d52;
   grid-area: spade;
   max-height: 100%;
@@ -88,14 +86,9 @@ header {
   align-items: center;
 }
 
-.header__image--green {
+.header__image-background--green {
   background-color: #0a846e;
   grid-area: seed;
-  height: 270px;
-  max-height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header__image--small {
@@ -452,11 +445,11 @@ header {
       "seed spade";
   }
 
-  .header__image--hand {
+  .header__hand {
     grid-area: hand;
   }
 
-  .header__image--menu {
+  .header__menu {
     position: absolute;
     width: 60px;
     height: 50px;
@@ -465,18 +458,18 @@ header {
     display: block;
   }
 
-  .header__image--logo {
+  .header__logo {
     top: 20%;
     left: 25%;
     width: 200px;
     height: 200px;
   }
 
-  .header__image--brown {
+  .header__image--background {
     grid-area: seed;
   }
 
-  .header__image--green {
+  .header__image-background--green {
     grid-area: spade;
   }
 

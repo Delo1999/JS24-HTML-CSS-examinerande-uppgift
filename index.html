@@ -27,44 +27,40 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
         <img
-          class="header__image header__image--hand"
+          class="header__hand"
           src="./assets/images/hand.jpeg"
           alt="hand som håller i miniplanta"
         />
-
-        <img
-          class="header__image header__image--menu"
-          src="./assets/images/menu.png"
-          alt="menu"
-        />
-
-        <img
-          class="header__image header__image--logo"
-          src="./assets/icons/Logo.svg"
-          alt="logo"
-        />
-        <div class="header__image--brown">
+        <a href="http://127.0.0.1:5500/index2.html">
+          <img class="header__menu" src="./assets/images/menu.png" alt="menu" />
+        </a>
+        <img class="header__logo" src="./assets/icons/Logo.svg" alt="logo" />
+        <section class="header__image--background">
           <img
             class="header__image header__image--small"
             src="./assets/icons/seedling.svg"
             alt="sått frö"
           />
-        </div>
-        <div class="header__image--green">
+        </section>
+        <section
+          class="header__image--background header__image-background--green"
+        >
           <img
             class="header__image header__image--small"
             src="./assets/icons/dig.svg"
             alt="spade i marken"
           />
-        </div>
+        </section>
       </header>
       <nav class="nav">
         <a class="nav__link" href="#">PLANER</a>
         <a class="nav__link" href="#">HISTORIK</a>
         <a class="nav__link" href="#">TIPS</a>
-        <a class="nav__link" href="#">LOGGA IN</a>
+        <a class="nav__link" href="http://127.0.0.1:5500/index2.html"
+          >LOGGA IN</a
+        >
       </nav>
       <main>
         <section class="harvest">
@@ -319,22 +315,22 @@
           <section class="card-2__container">
             <h2 class="card-2__title">Vi hörs!</h2>
             <article class="card-2__contact-details">
-              <div class="card-2__telephone-details">
+              <section class="card-2__telephone-details">
                 <img
                   class="card-2__telephone"
                   src="./assets/icons/telephone.svg"
                   alt="telephone-symbol"
                 />
                 <h3 class="card-2__number">0701-234567</h3>
-              </div>
-              <div class="card-2__email-details">
+              </section>
+              <section class="card-2__email-details">
                 <img
                   class="card-2__envelope"
                   src="./assets/icons/envelope.svg"
                   alt="envelope-symbol"
                 />
                 <h3 class="card-2__email">mail@mail.se</h3>
-              </div>
+              </section>
             </article>
           </section>
 
